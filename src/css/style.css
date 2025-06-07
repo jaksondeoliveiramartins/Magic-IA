@@ -7,34 +7,29 @@ body {
   align-items: center;
   padding: 10px;
   background-color: #0e0027;
+  margin-bottom: 60px;
 }
 .container {
   max-width: 1170px;
   margin: 0 auto;
 }
 .container .produtos {
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: left;
   color: #6528d3;
   font-size: 24px;
   font-weight: 500;
-
   margin-bottom: 32px;
   line-height: 32px;
   letter-spacing: 2px;
 }
 .container .filtros {
-  width: 100%;
-  display: flex;
-  justify-content: justify-between;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 32px;
-  align-items: center;
+   
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+    align-items: center;
 }
-  
+    
   
 .container .categorias-cartas,
 .container .preco-cartas {
@@ -168,3 +163,7 @@ body {
 .mostrar {
   display: block;
 }
+  
+  
+  
+
