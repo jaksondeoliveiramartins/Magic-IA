@@ -1,5 +1,11 @@
 body {
   font-family: "Roboto", sans-serif;
+   background-image: url(https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
 }
 .cabecalho {
   display: flex;
@@ -40,7 +46,7 @@ body {
 
 .container label {
   letter-spacing: 2px;
-  font-weight: 500px;
+  font-weight: 700px;
   color: #6528d3;
 }
 .container .categorias-cartas select,
@@ -50,8 +56,16 @@ body {
   border: 2px solid #6528d3;
   background-color: #f2eefa;
   color: #130234;
+  font-weight: 700;
   height: 52px;
+  transition: 0.3s ease-in-out;
 }
+.container .categorias-cartas select:hover{
+  background-color: #f2eefa;
+  cursor: pointer;
+}
+
+
 .container select:focus,
 .container input:focus,
 .container select:focus-visible,
