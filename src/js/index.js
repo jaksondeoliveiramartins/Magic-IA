@@ -11,11 +11,11 @@ const botaoFiltrar = document.querySelector(".btn-filtrar")
 //passo- 2
 botaoFiltrar.addEventListener("click",() => {
     //passo -3
-    botaoFiltrar.addEventListener("click",() => {
+    
         const categoriaSelecionada = document.querySelector("#categoria").value;
         const precoMaximoSelecionada = document.querySelector("#preco").value;
         
-    })
+    
     //passo -4
     const cartas = document.querySelectorAll(".carta")
 
