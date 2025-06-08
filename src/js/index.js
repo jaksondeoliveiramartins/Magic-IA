@@ -10,41 +10,49 @@
 const botaoFiltrar = document.querySelector(".btn-filtrar")
 //passo- 2
 botaoFiltrar.addEventListener("click",() => {
-    //passo -3
+    //passo -3 pegar valores do campo categoria e preço
     
         const categoriaSelecionada = document.querySelector("#categoria").value;
         const precoMaximoSelecionada = document.querySelector("#preco").value;
         
     
-    //passo -4
+    //passo -4 verificar se a carta deve ser mostrada ou escondida
     const cartas = document.querySelectorAll(".carta")
 
     cartas.forEach((carta) => {
         const categoriaCarta = carta.dataset.categoria;
-        
         const precoCarta = carta.dataset.preco;
-
-        //console.log(categoriaCarta,precoCarta);
-
+        
         let mostrarCarta = true;
 
-        const temFiltroDeCategoria = categoriaSelecionada !== '';
+        if (categoriaSelecionada !== '' && categoriaSelecionada.toLowerCase() !== categoriaCarta.toLowerCase()) {
+             mostrarCarta = false;
+         }
+        
+         if(mostrarCarta){
+             carta.classList.add("mostrar");
+             carta.classList.remove("esconder");
+         }else{
+             carta.classList.remove("mostrar");
+             carta.classList.add("esconder");
+         }
 
-        const cartaNaoBateComFiltroDeCategoria = 
-        categoriaSelecionada.toLowerCase() !== categoriaCarta.toLowerCase();
-
-        if(temFiltroDeCategoria && cartaNaoBateComFiltroDeCategoria ){
-            mostrarCarta = false;
-        }
-        if(mostrarCarta){
-            carta.classList.add("mostrar");
-        }else{
-            carta.classList.remove("mostrar");
-            carta.classList.add("esconder");
-        }
+        
     }); 
-
+       
 });
+
+        
+        
+
+        
+
+
+
+
+
+
+
 
 
 

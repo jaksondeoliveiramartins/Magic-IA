@@ -8,14 +8,10 @@
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/responsivo.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!--fontawesome -->
-
     <script src="https://kit.fontawesome.com/5e878fc292.js" crossorigin="anonymous"></script>
 </head>
 
@@ -26,39 +22,33 @@
     <main class="container">
         <h1 class="produtos">Produtos</h1>
         <div class="filtros">
-
             <div class="categorias-cartas">
                 <label for="categoria">Categoria</label>
                 <select id="categoria" class="categoria">
                     <option value="">Selecione uma Carta</option>
                     <option value="comum">Comum</option>
                     <option value="rara">Rara</option>
-                    <option value="epica">Épica</option>
+                    <option value="epica">Épica</option>
                 </select>
-
-
             </div>
             <div class="preco-cartas">
-                <label for="preco">Preço máximo (R$)</label>
+                <label for="preco">Preço máximo (R$)</label>
                 <input type="text" id="preco" class="preco" placeholder="Ex: 100">
             </div>
             <button class="btn-filtrar">Aplicar Filtros</button>
-
-
         </div>
         <ul class="cartas">
-            <li class="carta" data-categoria="Épica" data-preco="100"><img src="./src/imagens/carta-arkanon.png"
-                    alt="carta epica">
+            <li class="carta" data-categoria="Épica" data-preco="3000">
+                <img src="./src/imagens/carta-arkanon.png" alt="carta Arkanon"/>
                 <div class="informacoes">
                     <h2 class="nome-personagem">Arkanon</h2>
-                    <span class="categoria">Épica</span>
+                    <span class="categoria">Categoria: Épica</span>
                     <span class="preco">R$ 3.000,00</span>
                     <button class="btn-comprar">Comprar</button>
-                    <a href="http://wa.me/55319986496476?texto=Olá, quero compra a carta Arkanon!" class="contato"
-                        target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-
+                    <a href="http://wa.me/55319986496476?texto=Olá, quero compra a carta Arkanon!" class="contato" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
                 </div>
-
             </li>
             <li class="carta" data-categoria="Épica" data-preco="4000">
                 <img src="./src/imagens/carta-lymara.png" alt="Carta Lymara" />
@@ -67,58 +57,62 @@
                     <span class="categoria">Categoria: Épica</span>
                     <span class="preco">R$ 4000,00</span>
                     <button class="btn-comprar">Comprar</button>
-                    <a href="http://wa.me/55319986496476?texto=Olá, quero compra a carta Arkanon!" class="contato"
-                        target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="http://wa.me/55319986496476?texto=Olá, quero compra a carta Arkanon!" class="contato" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
                 </div>
             </li>
-            <li class="carta" data-categoria="Comum" data-preco="800">
+            <li class="carta" data-categoria="Rara" data-preco="1500">
                 <img src="./src/imagens/carta-kaeltrhen.png" alt="Carta carta-kaeltrhen" />
                 <div class="informacoes">
                     <h2 class="nome-personagem">kaeltrhen</h2>
-                    <span class="categoria">Categoria: Comum</span>
-                    <span class="preco">R$ 800,00</span>
-                    <button class="btn-comprar">Comprar</button>
-                    <a href="http://wa.me/55319986496476?texto=Olá, quero compra a carta Arkanon!" class="contato"
-                        target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
-            </li>
-            <li class="carta" data-categoria="Rara" data-preco="1500">
-                <img src="./src/imagens/carta-bronka.png" alt="Carta bronka" />
-                <div class="informacoes">
-                    <h2 class="nome-personagem">Bronka</h2>
                     <span class="categoria">Categoria: Rara</span>
                     <span class="preco">R$ 1500,00</span>
                     <button class="btn-comprar">Comprar</button>
-                    <a href="http://wa.me/55319986496476?texto=Olá, quero compra a carta Arkanon!" class="contato"
-                        target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="http://wa.me/55319986496476?texto=Olá, quero compra a carta Arkanon!" class="contato" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
                 </div>
             </li>
-            <li class="carta" data-categoria="Rara" data-preco="1500">
+            <li class="carta" data-categoria="Comum" data-preco="800">
+                <img src="./src/imagens/carta-bronka.png" alt="Carta bronka" />
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Bronka</h2>
+                    <span class="categoria">Categoria: Comum</span>
+                    <span class="preco">R$ 800,00</span>
+                    <button class="btn-comprar">Comprar</button>
+                    <a href="http://wa.me/55319986496476?texto=Olá, quero compra a carta Arkanon!" class="contato" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </li>
+            <li class="carta" data-categoria="Comum" data-preco="400">
                 <img src="./src/imagens/carta-franky.png" alt="Carta Franky" />
                 <div class="informacoes">
                     <h2 class="nome-personagem">Franky</h2>
                     <span class="categoria">Categoria: Comum</span>
-                    <span class="preco">R$ 600,00</span>
+                    <span class="preco">R$ 400,00</span>
                     <button class="btn-comprar">Comprar</button>
-                    <a href="http://wa.me/55319986496476?texto=Olá, quero compra a carta Arkanon!" class="contato"
-                        target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="http://wa.me/55319986496476?texto=Olá, quero compra a carta Arkanon!" class="contato" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
                 </div>
             </li>
-            <li class="carta" data-categoria="Comum" data-preco="400">
+            <li class="carta" data-categoria="Rara" data-preco="1000">
                 <img src="./src/imagens/carta-nyxsombra .png" alt="Carta Nyxsombra" />
                 <div class="informacoes">
                     <h2 class="nome-personagem">Nyxsombra</h2>
-                    <span class="categoria">Categoria: Comum</span>
-                    <span class="preco">R$ 400,00</span>
+                    <span class="categoria">Categoria: Rara</span>
+                    <span class="preco">R$ 1000,00</span>
                     <button class="btn-comprar">Comprar</button>
-                    <a href="http://wa.me/55319986496476?texto=Olá, quero compra a carta Arkanon!" class="contato"
-                        target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="http://wa.me/55319986496476?texto=Olá, quero compra a carta Arkanon!" class="contato" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
                 </div>
             </li>
         </ul>
     </main>
-    <footer class="rodape">@2025</footer>
-
+    <footer class="rodape">@2025 - Todos os direitos reservados</footer>
     <script src="./src/js/index.js"></script>
 </body>
 
