@@ -25,7 +25,12 @@ botaoFiltrar.addEventListener("click",() => {
         
         let mostrarCarta = true;
 
-        if (categoriaSelecionada !== '' && categoriaSelecionada.toLowerCase() !== categoriaCarta.toLowerCase()) {
+        const temFiltroDeCategoria = categoriaSelecionada !== '';
+        const cartaNaoBateComFiltroDeCategoria = categoriaSelecionada.toLowerCase() !== categoriaCarta.toLowerCase();
+
+        
+
+        if(temFiltroDeCategoria && cartaNaoBateComFiltroDeCategoria){
              mostrarCarta = false;
          }
         
