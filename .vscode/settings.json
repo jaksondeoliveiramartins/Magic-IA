@@ -1,5 +1,8 @@
 {
     "editor.formatOnSave": true,
     "editor.formatOnPaste": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "liveServer.settings.wait": 10,
+    "liveServer.settings.CustomBrowser": "chrome",
+    "liveServer.settings.ChromeDebuggingAttachment": false
 }
